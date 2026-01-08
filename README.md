@@ -24,7 +24,6 @@ En el apartado de **"Notificaciones de aplicaciones y otros remitentes"**, ubica
 
 ![Deshabilitar notificaciones de experiencias de usuario](/images/Notificaciones_de_experiencias_de_usuario.jpg)
 
-
 ---
 ---
 
@@ -36,42 +35,55 @@ Para evitar que se el equipo pueda ser visible por otros equipos dentro de una r
 
 Tanto en las opciones de Redes Privadas como Redes Publicas se tienen que deshabilitar las opciones de:
 
-* Detección de redes
-* Uso compartido de archivos e impresoras 
+* Detección de redes.
+* Uso compartido de archivos e impresoras.
 
 ![Deshabilitar ser visible en la red](/images/Visibilidad_en_la_red.jpg)
 
 ---
+---
 
-Recomendaciones en Inicio
+## Retirar recomendaciones en Inicio de Windows
 
-Configuración - Personalización - Inicio
-* Mostrar aplicaciones agregadas recientemente
-* Mostrar archivos recomendados en inicio
-* Mostrar recomendaciones
+Para las recomendaciones que Windows te muestra siempre al abrir el menu de inicio se tiene que ingresar a: 
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+**Configuración - Personalización - Inicio**
 
-Retirar widgets de la pantalla de bloqueo
+y deshabilitar las siguientes opciones:
+
+* Mostrar aplicaciones agregadas recientemente.
+* Mostrar archivos recomendados en Inicio, archivos recientes en el Explorador de archivos y elementos en Listas de accesos directos.
+* Mostrar recomendaciones para sugerencias, accesos directos, nuevas aplicaciones y mucho más.
+
+![Deshabilitar recomendaciones de inicio](/images/Recomendaciones_de_inicio.jpg)
+
+---
+---
+
+## Retirar widgets de la pantalla de bloqueo
 
 Configuración - Personalización - Pantalla de bloqueo
 * Estado de la pantalla de bloqueo - Ninguno
 * Personalizar pantalla de bloqueo - imagen fija
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
-Limpiar barra de tareas
+---
+---
+
+## Limpiar barra de tareas
 
 Configuración - Personalización - Barra de tareas
 
 * Windgets
 * Barra de búsqueda
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
+---
+---
 
-
-Bloquear Telemetría
+## Bloquear Telemetría
 
 Configuración - Privacidad y seguridad - Recomendaciones y ofertas
 * Deshabilitar todo
@@ -81,47 +93,48 @@ Configuración - Privacidad y seguridad - Diagnostico y comentarios
 
 Bloquear servicio de Telemetria en Service.msc y con archivo host
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
-Bloquear ubicación para apps
+---
+---
+
+## Bloquear ubicación para apps
 
 Configuración - Privacidad y seguridad - Ubicación
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
+---
+---
 
-
-
-Quitar avisos en el explorador de archivos
+## Quitar avisos en el explorador de archivos
 
 Explorador de archivos - opciones - Ver
 
 * Deshabilitar mostrar notificaciones del proveedor de sincronización 
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
-
-
-
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
-Bloquear acceso a Información de cuenta
+---
+---
+## Bloquear acceso a Información de cuenta
 
 
 Configuración - Privacidad y Seguridad - información de cuenta
 
 * Deshabilitar Acceso a la información de la cuenta
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
-Deshabilitar programas que inician con Windows
 
-Configuración - Aplicaciones - Inicio
+---
+---
 
-Quitar todo lo que no necesitas que se inicien con Windows
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
 
-Quitar Blodware de forma Automatizada
+## Quitar Blodware (programas que vienen instalados con Windows)
+
+### De forma Automatizada
 
 * Ejecutar PowerShell como administrador
 Ingresar el texto
@@ -139,34 +152,56 @@ Set-ExecutionPolicy Restricted -Scope CurrentUser
 
 confirmar con S
 
-Quitar Blodware de forma Manual
+![Descripción de la imagen](/images/picture.jpg)
+
+
+### De forma Manual
 
 Configuración -  Aplicaciones  - Aplicaciones instaladas
 
 Desinstalar las aplicaciones que no utilices que vienen con Windows
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+Deshabilitar programas que inician con Windows
 
-Deshabilitar Recall
+Configuración - Aplicaciones - Inicio
+
+Quitar todo lo que no necesitas que se inicien con Windows
+
+![Descripción de la imagen](/images/picture.jpg)
+
+---
+---
+
+## Deshabilitar Recall
 
 Configuración - Privacidad y Seguridad - Capturas de pantalla y grabación de pantalla
 
 *Acceso a capturas de pantalla y grabación de pantalla
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
-Evitar aplicaciones en segundo plano
+---
+---
+
+## Evitar aplicaciones en segundo plano
 
 Configuración -  Aplicaciones  - Aplicaciones instaladas - Opciones - Opciones adicionales
 
 * Opción de ejecutar en segundo plano - Nunca
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+![Descripción de la imagen](/images/picture.jpg)
 
-Menú contextual de Windows 10
+---
+---
+
+## Menú contextual de Windows 10
 
 Ejecutar cmd como administrador
 
 Ingresar instrucción y ejecutar
-reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve   
 
+```
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve   
+```
+
+![Descripción de la imagen](/images/picture.jpg)
