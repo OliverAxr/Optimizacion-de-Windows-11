@@ -1,42 +1,47 @@
-# Optimizacion de Windows 11
+# Optimización de Windows 11
 Este repositorio muesta como realizar la optimización de Windows 11 configurando y/o deshabilitando opciones de aplicaciones, apariencia, sugerencias y privacidad, la mayoria desde el menú de Configuración que viene por defecto.
 
 ## Retirar notificaciones de experiencias de usuario y de aplicaciones
 
 Para retirar las notificaciones de Windows que generan las aplicaciones que se tienen instaladas en el equipo, así como las notificaciones que te muestra para configurar algún servicio propio de Microsoft (como Copilot, OneDrive, etc.) se puede realizar desde:
 
-Configuración - Sistema - Notificaciones
+**Configuración - Sistema - Notificaciones**
 
 ### Activar o desactivar notificaciones de aplicaciones instaladas por separado
 
-- En el apartado de "Notificaciones de aplicaciones y otros remitentes", ubicar las aplicaciones de las cuales se requiere deshabilitar las notificaciones y pulsar el interruptor al modo Desactivado
+En el apartado de **"Notificaciones de aplicaciones y otros remitentes"**, ubicar las aplicaciones de las cuales se requiere deshabilitar las notificaciones y pulsar el interruptor al modo **Desactivado**
 
 ![Deshabilitar notificaciones de aplicaciones](/images/Notificaciones_de_aplicaciones.jpg)
 
 
 ### Notificaciones de experiencias de usuario
 
- - En el apartado de "Notificaciones de aplicaciones y otros remitentes", ubicar y abrir "Configuración adicional" y deshabilitar las opciones:
-  
-    * Muestra la experiencia de bienvenida de Windows después de las actualizaciones y cuando haya iniciado sesión para mostrar las novedades.
-    * Sugerir formas de sacar el máximo partido de Windows y finalizar la configuración de este dispositivo.
-    * Obtener recomendaciones y sugerencias al usar Windows.
+En el apartado de **"Notificaciones de aplicaciones y otros remitentes"**, ubicar y abrir **"Configuración adicional"** y deshabilitar las opciones:
+
+* Muestra la experiencia de bienvenida de Windows después de las actualizaciones y cuando haya iniciado sesión para mostrar las novedades.
+* Sugerir formas de sacar el máximo partido de Windows y finalizar la configuración de este dispositivo.
+* Obtener recomendaciones y sugerencias al usar Windows.
 
 ![Deshabilitar notificaciones de experiencias de usuario](/images/Notificaciones_de_experiencias_de_usuario.jpg)
 
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+---
+---
 
+## Deshabilitar función de ser visible en la red
 
+Para evitar que se el equipo pueda ser visible por otros equipos dentro de una red al a la que se esta conectando, se tiene que ingresar a: 
 
-Configuración - Sistema - Notificaciones 
-* Deshabilitar todo o solo no que no interese
+**Configuración - Red e Internet - Configuración avanzada de red - Configuración avanzada de uso compartido**
 
-*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+Tanto en las opciones de Redes Privadas como Redes Publicas se tienen que deshabilitar las opciones de:
 
+* Detección de redes
+* Uso compartido de archivos e impresoras 
 
+![Deshabilitar ser visible en la red](/images/Visibilidad_en_la_red.jpg)
 
-
+---
 
 Recomendaciones en Inicio
 
@@ -95,12 +100,7 @@ Explorador de archivos - opciones - Ver
 
 */*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
 
-Deshabilitar función de ser visible en red
 
-configuración - red e internet - configuración avanzada de red - configuración avanzada de uso compartido
-
-* Detección de redes
-* Uso compartido de archivos e impresoras (Publicas y privadas)
 
 
 */*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
