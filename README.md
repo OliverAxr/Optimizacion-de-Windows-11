@@ -296,14 +296,34 @@ y retirar el check de la casilla **Mostrar notificaciones del proveedor de sincr
 ---
 ---
 
+## Deshabilitar el inicio rápido de Windows
+
+Para evitar que Windows guarde los registros de lo que se esta utilizando en la sesión activa para iniciar "rapidamente" al encender el equipo se tiene que ingresar a:
+
+**Panel de contro - Opciones de energía - Elegir la acción de los botones de inicio/apagado**
+
+y dar clic en la opción **Cambiar la configuración no disponible actualmente** y **Desactivar** la opción **Activar inicio rápido**
+
+![Deshabilitar inicio rápido de Windows](/images/Inicio_rapido.jpg)
+
+Si no se hace, despues de un tiempo el sistema empieza a mostrarse lento, esto porque en el apagado de sistema, en vez de eliminar procesos que ya no estan en uso, los guarda para volver a cargarlos en el arranque.
+
+---
+---
+
 ## Menú contextual de Windows 10
 
-Ejecutar cmd como administrador
-
-Ingresar instrucción y ejecutar
+Si deseas regresar al menú contextual de Windows 10 que aparece al dar clic derecho sobre algún archivo, tienes que ingresar a Simbolo de sistema como administrador y ejecutar la siguiente instrucción:
 
 ```
 reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve   
 ```
 
-![Descripción de la imagen](/images/picture.jpg)
+![Activar Menu contextual de Windows 10](/images/menu_contextual_w10.jpg)
+
+![Activar Menu contextual de Windows 10](/images/menu_contextual_w10_activo.jpg)
+
+___
+___
+
+## Espero que esto te sea de utilidad y gracias por llegar hasta aquí.
