@@ -219,7 +219,7 @@ Por ultimo se puede bloquear la conexión de servidores a donde se envia la info
 
 ![Bloquear DNS](/images/Archivo_host.jpg)
 
-Se puede consultar el repositorio de [hagezi/dns-blocklist](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#native "") para mayor información, en el apartado de **Native Tracker - Windows/Host**
+Se puede consultar el repositorio de [hagezi/dns-blocklist](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#native) para mayor información, en el apartado de **Native Tracker - Windows/Host**
 
 ---
 ---
@@ -251,6 +251,38 @@ y cambiar la opción de **Acceso a la información de la cuenta** a **Desactivad
 ---
 ---
 
+## Deshabilitar el acceso a la captura de pantalla (Recall)
+
+Para deshabilitar el acceso de Windows y los programas a las capturas de pantalla que se realizan en el equipo se ingresa a:
+
+**Configuración - Privacidad y Seguridad - Capturas de pantalla y grabación de pantalla**
+
+y se cambia la opción de **Acceso a capturas de pantalla y grabación de pantalla** a **Desactivado**.
+
+![Deshabilitar captura de pantallas](/images/Privacidad_capturas_pantalla.jpg)
+
+---
+---
+
+## Deshabilitar servicios de Copilot
+
+Para retirar todos los servicios de Microsoft Copilot, puedes ingresar al repositorio de [zoicware/RemoveWindowsAI](https://github.com/zoicware/RemoveWindowsAI), copiar el script del apartado de **Launch with UI** y pegarlo en PowerShell iniciado como administrador.
+
+```
+& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveWindowsAi.ps1")))
+```
+
+![Ejecucion de script en PowerShell](/images/Script_copilot.jpg)
+
+y dar clic en Apply una vez cargada la interfaz grafica con todas las opciones seleccionadas.
+
+![Script grafico](/images/Script_copilot_UI.jpg)
+
+Para completar el proceso es necesario reiniciar la pc.
+
+---
+---
+
 ## Quitar avisos en el explorador de archivos
 
 Para retirar las sugerencias de copias de seguridad en OneDrive y demás productos de Microsoft se ingresa a:
@@ -259,25 +291,10 @@ Para retirar las sugerencias de copias de seguridad en OneDrive y demás product
 
 y retirar el check de la casilla **Mostrar notificaciones del proveedor de sincronización**.
 
-![Descripción de la imagen](/images/picture.jpg)
+![Deshabilitar avisos en explorador de archivos](/images/Avisos_explorador_archivos.jpg)
 
 ---
 ---
-
-
-
-## Deshabilitar Recall
-
-Configuración - Privacidad y Seguridad - Capturas de pantalla y grabación de pantalla
-
-*Acceso a capturas de pantalla y grabación de pantalla
-
-![Descripción de la imagen](/images/picture.jpg)
-
----
----
-
-
 
 ## Menú contextual de Windows 10
 
