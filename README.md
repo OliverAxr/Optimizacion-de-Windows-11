@@ -33,7 +33,7 @@ Para evitar que se el equipo pueda ser visible por otros equipos dentro de una r
 
 **Configuración - Red e Internet - Configuración avanzada de red - Configuración avanzada de uso compartido**
 
-Tanto en las opciones de Redes Privadas como Redes Publicas se tienen que deshabilitar las opciones de:
+Tanto en las opciones de **Redes Privadas** así como **Redes Publicas** se tienen que deshabilitar las opciones de:
 
 * Detección de redes.
 * Uso compartido de archivos e impresoras.
@@ -43,9 +43,28 @@ Tanto en las opciones de Redes Privadas como Redes Publicas se tienen que deshab
 ---
 ---
 
+## Retirar widgets de la pantalla de bloqueo
+
+Para retirar los Widgets de noticias e información de productos de Microsoft que se muestran en la pantalla de bloqueo, así como dejar una imagen fija, se tiene que ingresar a:
+
+**Configuración - Personalización - Pantalla de bloqueo**
+
+y se tienen que cambiar las opciones: 
+
+* Personalizar pantalla de bloqueo a **Imagen**
+> [!NOTE]
+> 
+> Se puede seleccionar una imagen ya almacenada en el equipo con el botón **Examinar Fotos**
+* Estado de la pantalla de bloqueo a **Ninguno**
+
+![Retirar widgets de la pantalla de bloqueo](/images/Widgets_pantalla_bloqueo.jpg)
+
+---
+---
+
 ## Retirar recomendaciones en Inicio de Windows
 
-Para las recomendaciones que Windows te muestra siempre al abrir el menu de inicio se tiene que ingresar a: 
+Para deshabilitar las recomendaciones que Windows te muestra siempre al abrir el menu de inicio se tiene que ingresar a: 
 
 **Configuración - Personalización - Inicio**
 
@@ -60,77 +79,21 @@ y deshabilitar las siguientes opciones:
 ---
 ---
 
-## Retirar widgets de la pantalla de bloqueo
-
-Configuración - Personalización - Pantalla de bloqueo
-* Estado de la pantalla de bloqueo - Ninguno
-* Personalizar pantalla de bloqueo - imagen fija
-
-![Descripción de la imagen](/images/picture.jpg)
-
----
----
-
 ## Limpiar barra de tareas
 
-Configuración - Personalización - Barra de tareas
+Este apartado hace referencia al retiro de los Widgets de noticias y el botón de busqueda en la barra de tareas de Windows, para ello se tienen que ingresar a:
 
-* Windgets
-* Barra de búsqueda
+**Configuración - Personalización - Barra de tareas**
 
-![Descripción de la imagen](/images/picture.jpg)
+y en el apartado de **Elementos de la barra de tareas** cambiar las opciones de:
 
----
----
+* Buscar a **Ocultar**
+* Windgets a **Desactivado**
 
-## Bloquear Telemetría
-
-Configuración - Privacidad y seguridad - Recomendaciones y ofertas
-* Deshabilitar todo
-
-Configuración - Privacidad y seguridad - Diagnostico y comentarios
-* Enviar los datos de diagnostico 
-
-Bloquear servicio de Telemetria en Service.msc y con archivo host
-
-![Descripción de la imagen](/images/picture.jpg)
+![Limpiar barra de tareas](/images/Barra_tareas.jpg)
 
 ---
 ---
-
-## Bloquear ubicación para apps
-
-Configuración - Privacidad y seguridad - Ubicación
-
-![Descripción de la imagen](/images/picture.jpg)
-
----
----
-
-## Quitar avisos en el explorador de archivos
-
-Explorador de archivos - opciones - Ver
-
-* Deshabilitar mostrar notificaciones del proveedor de sincronización 
-
-![Descripción de la imagen](/images/picture.jpg)
-
----
----
-## Bloquear acceso a Información de cuenta
-
-
-Configuración - Privacidad y Seguridad - información de cuenta
-
-* Deshabilitar Acceso a la información de la cuenta
-
-![Descripción de la imagen](/images/picture.jpg)
-
-
----
----
-
-
 
 ## Quitar Blodware (programas que vienen instalados con Windows)
 
@@ -172,6 +135,70 @@ Quitar todo lo que no necesitas que se inicien con Windows
 ---
 ---
 
+## Evitar aplicaciones en segundo plano
+
+Configuración -  Aplicaciones  - Aplicaciones instaladas - Opciones - Opciones adicionales
+
+* Opción de ejecutar en segundo plano - Nunca
+
+![Descripción de la imagen](/images/picture.jpg)
+
+---
+---
+
+## Bloquear Telemetría
+
+Configuración - Privacidad y seguridad - Recomendaciones y ofertas
+* Deshabilitar todo
+
+Configuración - Privacidad y seguridad - Diagnostico y comentarios
+* Enviar los datos de diagnostico 
+
+Bloquear servicio de Telemetria en Service.msc y con archivo host
+
+![Descripción de la imagen](/images/picture.jpg)
+
+---
+---
+
+## Bloquear ubicación para apps
+
+Configuración - Privacidad y seguridad - Ubicación
+
+![Descripción de la imagen](/images/picture.jpg)
+
+---
+---
+
+
+
+
+## Quitar avisos en el explorador de archivos
+
+Explorador de archivos - opciones - Ver
+
+* Deshabilitar mostrar notificaciones del proveedor de sincronización 
+
+![Descripción de la imagen](/images/picture.jpg)
+
+---
+---
+## Bloquear acceso a Información de cuenta
+
+
+Configuración - Privacidad y Seguridad - información de cuenta
+
+* Deshabilitar Acceso a la información de la cuenta
+
+![Descripción de la imagen](/images/picture.jpg)
+
+
+---
+---
+
+
+
+
 ## Deshabilitar Recall
 
 Configuración - Privacidad y Seguridad - Capturas de pantalla y grabación de pantalla
@@ -183,16 +210,7 @@ Configuración - Privacidad y Seguridad - Capturas de pantalla y grabación de p
 ---
 ---
 
-## Evitar aplicaciones en segundo plano
 
-Configuración -  Aplicaciones  - Aplicaciones instaladas - Opciones - Opciones adicionales
-
-* Opción de ejecutar en segundo plano - Nunca
-
-![Descripción de la imagen](/images/picture.jpg)
-
----
----
 
 ## Menú contextual de Windows 10
 
