@@ -9,7 +9,7 @@ Para retirar las notificaciones de Windows que generan las aplicaciones que se t
 
 ### Activar o desactivar notificaciones de aplicaciones instaladas por separado
 
-En el apartado de **"Notificaciones de aplicaciones y otros remitentes"**, ubicar las aplicaciones de las cuales se requiere deshabilitar las notificaciones y pulsar el interruptor al modo **Desactivado**
+En el apartado de **"Notificaciones de aplicaciones y otros remitentes"**, ubicar las aplicaciones de las cuales se requiere deshabilitar las notificaciones y pulsar el interruptor al modo **Desactivado**.
 
 ![Deshabilitar notificaciones de aplicaciones](/images/Notificaciones_de_aplicaciones.jpg)
 
@@ -51,11 +51,11 @@ Para retirar los Widgets de noticias e información de productos de Microsoft qu
 
 y se tienen que cambiar las opciones: 
 
-* Personalizar pantalla de bloqueo a **Imagen**
+* Personalizar pantalla de bloqueo a **Imagen**.
 > [!NOTE]
 > 
-> Se puede seleccionar una imagen ya almacenada en el equipo con el botón **Examinar Fotos**
-* Estado de la pantalla de bloqueo a **Ninguno**
+> Se puede seleccionar una imagen ya almacenada en el equipo con el botón **Examinar Fotos**.
+* Estado de la pantalla de bloqueo a **Ninguno**.
 
 ![Retirar widgets de la pantalla de bloqueo](/images/Widgets_pantalla_bloqueo.jpg)
 
@@ -87,8 +87,8 @@ Este apartado hace referencia al retiro de los Widgets de noticias y el botón d
 
 y en el apartado de **Elementos de la barra de tareas** cambiar las opciones de:
 
-* Buscar a **Ocultar**
-* Windgets a **Desactivado**
+* Buscar a **Ocultar**.
+* Windgets a **Desactivado**.
 
 ![Limpiar barra de tareas](/images/Barra_tareas.jpg)
 
@@ -97,105 +97,172 @@ y en el apartado de **Elementos de la barra de tareas** cambiar las opciones de:
 
 ## Quitar Blodware (programas que vienen instalados con Windows)
 
-### De forma Automatizada
-
-* Ejecutar PowerShell como administrador
-Ingresar el texto
-
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-confirmar con S
-
-* Ejecutar el script removedor.ps1
-
-* Ejecutar PowerShell como administrador
-Ingresar el texto
-
-Set-ExecutionPolicy Restricted -Scope CurrentUser
-
-confirmar con S
-
-![Descripción de la imagen](/images/picture.jpg)
-
+Es recomendable retirar los programas que vienen por defecto en Windows que no utilices (como los servicios de Xbox, Bing, Teams, Sugerencias, etc.) para evitar uso de espacio en disco y procesos en segundo plano innecesarios que consuman recursos.
 
 ### De forma Manual
 
-Configuración -  Aplicaciones  - Aplicaciones instaladas
+Para revisar el listado de programas que vienen por defecto y eliminar los que creemos convenientes se tiene que ingresar a:
 
-Desinstalar las aplicaciones que no utilices que vienen con Windows
+**Configuración -  Aplicaciones  - Aplicaciones instaladas**
 
-Deshabilitar programas que inician con Windows
+y dar click en el botón de **Opciones** de los programas identificados y selecionar la opción de **Desinstalar**.
 
-Configuración - Aplicaciones - Inicio
+![Retirar Blodware de forma manual](/images/Blodware_manual.jpg)
 
-Quitar todo lo que no necesitas que se inicien con Windows
+### De forma Automatizada
 
-![Descripción de la imagen](/images/picture.jpg)
+Este proceso se puede realizar también mediante un script el cual viene incluido en este repositorio, que se ejecuta por medio de PowerShell, en el que se enlistan los siguientes servicios a desinstalar:
+
+1. Microsoft GamingAp
+2. Xbox Gaming Overla
+3. Xbox Identity Provide
+4. Gaming Service
+5. Microsoft BingWeathe
+6. Microsoft Windows People Experience Host
+7. Microsoft XboxGame Callable UI
+8. Microsoft Xbox Speech To Text Overlay
+9. Microsoft Outlook For Windows
+10. MSTeams
+11. Microsoft Xbox TCUI
+12. Microsoft BingNews
+13. Microsoft GetHelp
+14. Microsoft PowerAutomate Desktop
+15. Microsoft Microsoft Solitaire Collection
+16. Microsoft Microsoft Office Hub
+17. Clipchamp Clipchamp
+18. Microsoft BingSearch
+19. Microsoft Windows Client CoreAI
+20. Microsoft Windows Feedback Hub
+
+Para realiza este proceso se tiene que habilitar la ejecución de scripts de Windows mediante PowerShell, de la siguiente manera:
+
+* Ejecutar **PowerShell** como administrador e ingresar la siguiente instrucción y confirmar la instrucción tecleando S:
+
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+![Activar permisos de ejecución de script](/images/Activar_permiso_scripts.jpg)
+
+* Ejecutar el script removedor.ps1 (clic derecho al script y ejecutar con PowerShell)
+
+![Eecutar scrip removedor](/images/Ejecutar_script.jpg)
+
+* En la misma ventana de PowerShell que se habilito el permiso de uso de scripts, se tiene que ingresar la siguiente instrucción y confirmar la instrucción tecleando S para deshabilitar ejecución de scripts:
+
+```
+Set-ExecutionPolicy Restricted -Scope CurrentUser
+```
+
+![Desactivar permisos de ejecución de script](/images/Desactivar_permiso_scripts.jpg)
 
 ---
 ---
 
 ## Evitar aplicaciones en segundo plano
 
-Configuración -  Aplicaciones  - Aplicaciones instaladas - Opciones - Opciones adicionales
+Con la finalidad de evitar consumo de recursos innecesarios en el sistema se pueden deshabilitar la opcion de ejecutar en segundo plano los programas instalados, desde:
 
-* Opción de ejecutar en segundo plano - Nunca
+**Configuración -  Aplicaciones  - Aplicaciones instaladas - Opciones - Opciones avanzadas**
 
-![Descripción de la imagen](/images/picture.jpg)
+y en el apartado **Permisos de aplicaciones en segundo plano** cambiar la siguiente opción:
+
+* Permitir que esta aplicación se ejecute en segundo plano a **Nunca**.
+
+![Descripción de la imagen](/images/Programas_segundo_plano.jpg)
+
+---
+---
+
+## Deshabilitar programas que inician al arrancar Windows
+
+Para mejor el arranque de Windows, se tiene que deshabilitar el arranque de programas que no son necesarios desde inicio desde:
+
+**Configuración - Aplicaciones - Inicio**
+
+Y quitar todo lo que no necesitas que se inicien con Windows cambiando el interruptor al modo **Desactivado**.
+
+![Deshabilitar programas que inician con Windows](/images/Programas_inicio_windows.jpg)
 
 ---
 ---
 
 ## Bloquear Telemetría
 
-Configuración - Privacidad y seguridad - Recomendaciones y ofertas
-* Deshabilitar todo
+Windows desde siempre tiene de raiz la recolección de datos de todo lo que se hace en el sistema, y para evitar esta intromisión se tiene que ingresar a: 
 
-Configuración - Privacidad y seguridad - Diagnostico y comentarios
-* Enviar los datos de diagnostico 
+**Configuración - Privacidad y seguridad - General**
 
-Bloquear servicio de Telemetria en Service.msc y con archivo host
+y se tienen que **Deshabilitar** todas las opciones de este apartado. 
 
-![Descripción de la imagen](/images/picture.jpg)
+![Deshabilitar opciones de privacidad general](/images/Privacidad_general.jpg)
+
+posteriormente ingresar a:
+
+**Configuración - Privacidad y seguridad - Diagnostico y comentarios**
+
+y en el apartado de **Datos de diagnóstico**, **Desactivar** la opción de **Enviar los datos de diagnóstico opcionales.**
+
+![Deshabilitar opciones de privacidad de diagnosticos](/images/Privacidad_diagnostico.jpg)
+
+también se tiene que ingresar a **Servicios de Windows** desde el apartado de **Ejecutar** e ingresar el comando:
+
+```
+service.msc
+```
+
+ubicar el servicio de **Experiencia del usuario y telemetría asociadas** y dar clic derecho en el y seleccionar **Propiedades**, presionar el botón **Detener** y posteriomente cambiar la opción de **Tipo de inicio** a **Deshabilitado**.
+
+![Deshabilitar servicio de experiencia de usuario](/images/Servicio_experiencia_usuario.jpg)
+
+Por ultimo se puede bloquear la conexión de servidores a donde se envia la información recopilada del sistema agregando información al archivo host (aquí se agrega un archivo que puedes usar para reemplazarlo). 
+
+![Bloquear DNS](/images/Archivo_host.jpg)
+
+Se puede consultar el repositorio de [hagezi/dns-blocklist](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#native "") para mayor información, en el apartado de **Native Tracker - Windows/Host**
 
 ---
 ---
 
 ## Bloquear ubicación para apps
 
-Configuración - Privacidad y seguridad - Ubicación
+Para evitar que los programas tengan acceso a la ubicación del equipo se ingresa a:
 
-![Descripción de la imagen](/images/picture.jpg)
+**Configuración - Privacidad y seguridad - Ubicación**
+
+y cambiar la opción de **Servicios de ubicación** a **Desactivado**.
+
+![Deshabilitar ubicación](/images/Privacidad_ubicacion.jpg)
 
 ---
 ---
 
+## Bloquear acceso a Información de cuenta
+
+Para evitar que los programas instalados tengan acceso a la información de cuenta de usuario del equipo se ingresa a:
 
 
+**Configuración - Privacidad y Seguridad - información de cuenta**
+
+y cambiar la opción de **Acceso a la información de la cuenta** a **Desactivado**.
+
+![Deshabilitar acceso a la cuenta](/images/Informacion_cuenta.jpg)
+
+---
+---
 
 ## Quitar avisos en el explorador de archivos
 
-Explorador de archivos - opciones - Ver
+Para retirar las sugerencias de copias de seguridad en OneDrive y demás productos de Microsoft se ingresa a:
 
-* Deshabilitar mostrar notificaciones del proveedor de sincronización 
+**Explorador de archivos - Opciones - Ver**
 
-![Descripción de la imagen](/images/picture.jpg)
-
----
----
-## Bloquear acceso a Información de cuenta
-
-
-Configuración - Privacidad y Seguridad - información de cuenta
-
-* Deshabilitar Acceso a la información de la cuenta
+y retirar el check de la casilla **Mostrar notificaciones del proveedor de sincronización**.
 
 ![Descripción de la imagen](/images/picture.jpg)
 
-
 ---
 ---
-
 
 
 
